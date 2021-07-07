@@ -77,4 +77,16 @@ class ProductTest < ActiveSupport::TestCase
     @product.cost_cents = 2
     assert_not @product.valid?
   end
+
+  test 'main_image should be present' do
+    # @product.image
+    #         .attach(io: File.open(Rails.root
+    #                                    .join('app',
+    #                                          'assets',
+    #                                          'images',
+    #                                          'amoritta_test_image.png')
+    #                                    .to_s),
+    #                 filename: 'amorita_test_image.png',
+    #                 content_type: 'image/png')
+  end
 end
